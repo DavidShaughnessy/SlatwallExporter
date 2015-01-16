@@ -3,11 +3,11 @@
   "pluginVersion": "1.0",
   "builderMinVersion": "2.3",
   "builderMaxVersion": "3.0.*",
-  "identifier": "slattest",
+  "identifier": "SlatwallExporter",
   "name": "SlatwallExporter",
   "description": "This is a automated exporter for generating Slatwall Framwork functional test-cases.",
   "siteUrl": "https://github.com/ten24/Slatwall",
-  "shutdownFunction": "slattest.shutdown",
+  "shutdownFunction": "SlatwallExporter.shutdown",
   "load": [
     "slatwallExporter.js"
   ]
