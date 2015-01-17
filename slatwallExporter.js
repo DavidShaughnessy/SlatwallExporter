@@ -43,10 +43,14 @@ builder.selenium2.io.addDerivedLangFormatter("Java", {
 	    "import org.openqa.selenium.firefox.FirefoxDriver;\n" +
 	    "import org.openqa.selenium.*;\n" +
 	    "import static org.openqa.selenium.OutputType.*;\n" +
+	    "import TestConfig;\n" +
 	    "\n" +
-	    "public class {scriptName} {junit_class_extra} extends TestConfig {\n{junit_fields_extra}" +
+	    "public class {scriptName} {junit_class_extra}{\n{junit_fields_extra}" +
 	    "    {driverVar}\n" +
 	    "    \n" +
+	    "	 // Instantiate TestConfig with Base URL, User Email, and Password Here 	" +
+	    "    \n" +
+	    " 	 TestConfig tc = new TestConfig("","","");\n" +	 
 	    "    @Before\n" +
 	    "    public void setUp() throws Exception {\n" +
 	    "        {initDriver}\n" +
