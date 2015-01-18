@@ -62,7 +62,7 @@ builder.selenium2.io.addDerivedLangFormatter("Java", {
       '        wd.findElement(By.name("emailAddress")).sendKeys(tc.getUserEmail());\n' +
       '        wd.findElement(By.name("password")).click();\n' +
       '        wd.findElement(By.name("password")).clear();\n' +
-      '        wd.findElement(By.name("password")).sendKeys("tc.getPassword()");\n' +
+      '        wd.findElement(By.name("password")).sendKeys(tc.getPassword());\n' +
       '        wd.findElement(By.xpath("//form[@id=\'adminLoginForm\']//button[.=\'Login\']")).click();\n' +  
       "    }\n" +
       "    \n" +
