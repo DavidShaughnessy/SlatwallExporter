@@ -77,6 +77,10 @@ builder.selenium2.io.addDerivedLangFormatter("Java", {
       "    \n" +
       "    @After\n" +
       "    public void tearDown() {\n" +
+	  "        assertTrue((wd.findElements(By.xpath(\"//div[@id='bs-example-navbar-collapse-1']/div/ul/li[2]/a/i\")).size() != 0));\n" +
+	  "        wd.findElement(By.xpath(\"//div[@id='bs-example-navbar-collapse-1']/div/ul/li[2]/a/i\")).click();\n" +
+	  "        assertTrue((wd.findElements(By.linkText(\"Logout\")).size() != 0));\n" +
+	  "    	   wd.findElement(By.linkText(\"Logout\")).click();\n" +
       "        wd.quit();\n" +
       "    }\n" +
       "    \n" +

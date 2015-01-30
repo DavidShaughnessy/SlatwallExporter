@@ -1,4 +1,4 @@
-# SlatwallExporter
+# Slatwall Selenium Builder Exporter
 SE Builder plugin that will enable exporting tests that are compatible with Slatwall's testing environment.
 
 <h3>Getting Started:</h3><br>
